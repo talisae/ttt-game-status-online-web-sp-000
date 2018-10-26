@@ -42,8 +42,4 @@ def draw?(board)
   else
     false
   end
-else
-  false
-end
-
 end
