@@ -47,3 +47,13 @@ end
 def over?(board)
   draw?(board) || full?(board) || won?(board)
 end
+
+def winner(board)
+  if combo.all? {|index| board[index] == "X"}
+    winner = "X"
+  elsif combo.all? {|index| board[index] == "O"}
+    winner = "O"
+  else draw?(board)
+    nil
+  end
+end
