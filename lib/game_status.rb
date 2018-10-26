@@ -33,7 +33,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|input| input == "X" || input == "O"}
+  board.all?{|index| index == "X" || index == "O"}
 end
 
 def draw?(board)
@@ -55,5 +55,6 @@ def winner(board)
     winner = "O"
   else
   end
+
   winner
 end
